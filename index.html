@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+</head>
+<body>
+  <div id="header">
+    <section class="header-image"></section>
+    <section class="header-text">
+      <h2>Vanessa Sabrina Costa Bandeira</h2>
+      <p><img src="./assets/outline_location_on_black_24dp.png"></img> Bacabal-MA</p>
+      <p><img src="./assets/outline_phone_black_24dp.png"></img> (98)981965664</p>
+      <p><img src="./assets/outline_email_black_24dp.png"></img> sabrina.keito@gmail.com</p>
+    </section>
+      
+  </div>
+
+  <div id="body">
+    <!-- Botões com as funções aplicadas  -->
+    <section id="buttons">
+      
+      <button onclick="aboutMe()" class="btn btn-outline-light">Sobre Mim</button>
+      <button onclick="education()" class="btn btn-outline-light">Formação</button>
+      <button onclick="skills()" class="btn btn-outline-light">Qualificações</button>
+      <button onclick="portifolio()" class="btn btn-outline-light">Portifólio</button>
+      <button onclick="contact()" class="btn btn-outline-light">Contato</button>
+
+    </section>
+    <!-- Formulário de Contato -->
+    <form id="form" class= "form" style="display: none;" action="./index.html">
+
+      <label for="fname"></label><br>
+      <div class="form-floating mb-3">
+        <input type="text" class="form-control" id="floatingName">
+        <label for="floatingName">Nome</label>
+      </div>
+      <div class="form-floating mb-3">
+        <input type="tel" class="form-control" id="floatingTel">
+        <label for="floatingTel">Telefone</label>
+      </div>
+      <div class="form-floating mb-3">
+        
+        <input type="e-mail" class="form-control" id="floatingEmail">
+        <label for="floatingEmail">E-mail</label>
+      </div>
+      <input type="submit" class="btn btn-outline-light" value="Enviar"></input>
+
+    </form>
+
+    <!-- Seção com os cards do currículo  -->
+    <div class="sections">
+      <section id="text-aboutme" class="card text-bg-light mb-5">
+        <div class="card-header fs-2">Sobre mim</div>
+          <div class="card-body">
+            <p>Olá, me chamo Vanessa Sabrina, tenho 28 anos e gosto muito de fazer artesanato. Atualmente tenho uma pequena empresa de crochê, 
+              onde faço artes em pelúcias, jogos americanos, chocalhos, chaveiros e tudo que se possa relacionar com o crochê. Ao mesmo tempo faço faculdade de Análise
+              de sistemas, cursando o 4° período, e pretendo seguir com sucesso nessas duas áreas bem distintas e que amo muito.</p>
+          </div>
+      </section>
+          
+      <section id="text-education" class="card text-bg-light mb-5">
+        <div class="card-header fs-2">Formação</div>
+        <div class="card-body">
+          <p>♦ Ensino Médio – Colégio Reis Magos – Concluído em 2012</p>
+          <p>♦ Ensino Superior Tecnólogo – Análise e Desenvolvimento de Sistemas – Em Andamento</p> 
+        </div>
+      </section>
+
+      <section id="text-skills" class="card text-bg-light mb-5">
+        <div class="card-header fs-2">Qualificações</div>
+        <div class="card-body">
+          <p>♦ Curso de Informática, Módulo I (I.P.D, Digitação, Windows 7, Word, Excel, Power Point, Internet, Automação Comercial, Auxiliar Administrativo, Secretariado, Recepcionista, Excelência em Atendimento e Venda) – Information – Carga horária: 120 horas</p>
+          <p>♦ Aprender a Empreender – SEBRAE/MA – Carga horária: 24 horas</p>
+          <p>♦ AutoCAD 2D, SketchUP – Microlins –  Carga horária: 40 horas</p>
+        </div>
+      </section>
+
+      <section id="text-portifolio" class="card text-bg-light mb-5">
+        <div class="card-header fs-2">Portifólio</div>
+        <div class="card-body">
+          <h3></h3>
+          <a href="https://github.com/kscarby" ><img src="./assets/github.png"></img></a>
+          <a href="https://www.linkedin.com/in/vanessa-sabrina/"><img src="./assets/linkedin.png"></img></a>
+        </div>
+      </section>
+    </div>
+  </div>
+    
+
+  <script src="script.js"></script> 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>  
+</body>
+</html>
